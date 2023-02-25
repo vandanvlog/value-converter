@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/idEdt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:hint="enter your value"
+        android:inputType="number"
+        android:textColorHint="@color/black"
+        android:layout_marginTop="35dp"
+        android:paddingTop="10dp"/>
+
+    <GridLayout
+        android:id="@+id/idFirst"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idEdt"
+        android:paddingTop="20dp"
+        android:orientation="horizontal"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        >
+
+
+        <Button
+            android:id="@+id/idPound"
+            android:layout_width="183dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="7dp"
+            android:padding="5dp"
+            android:text="to Pound" />
+
+        <Button
+            android:id="@+id/idGram"
+            android:layout_width="189dp"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:layout_margin="7dp"
+            android:padding="5dp"
+            android:text="to Gram" />
+
+
+    </GridLayout>
+
+    <GridLayout
+        android:id="@+id/idSecond"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idFirst"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:paddingTop="20dp">
+
+
+        <Button
+            android:id="@+id/idMeter"
+            android:layout_width="178dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="7dp"
+            android:padding="5dp"
+            android:text="to Mete" />
+
+        <Button
+            android:id="@+id/idKilomiter"
+            android:layout_width="183dp"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:layout_margin="7dp"
+            android:padding="5dp"
+            android:text="to Kilomiter" />
+
+
+    </GridLayout>
+
+    <GridLayout
+        android:id="@+id/idthird"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:layout_below="@id/idSecond"
+        android:orientation="horizontal"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        >
+
+
+        <Button
+            android:id="@+id/idMicrCentimiter"
+            android:layout_width="187dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="7dp"
+            android:padding="5dp"
+            android:text="to Centimiter" />
+
+
+        <Button
+            android:id="@+id/idMicrogram"
+            android:layout_width="185dp"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:layout_margin="7dp"
+            android:padding="5dp"
+            android:text="to Microgram" />
+
+
+    </GridLayout>
+
+
+
+
+
+</RelativeLayout>
